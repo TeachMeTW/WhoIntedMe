@@ -17,6 +17,8 @@ flask-cors = "^4.0.0"
 flask-jwt-extended = "^4.5.2"
 flask-restful = "^0.3.10"
 tailwind = "^3.1.5b0"
+pre-commit = "^3.3.3"
+click = "^8.1.7"
 
 
 [tool.poetry.group.dev.dependencies]
