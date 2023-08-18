@@ -1,4 +1,4 @@
-name: Python Lint with Poetry
+name: WhoIntedMe CI
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  lint:
+  lint-and-test:
     runs-on: ubuntu-latest
     steps:
       - name: Check out code
@@ -18,16 +18,20 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: 3.8
+          python-version: 3.11.4
 
       - name: Install Poetry
         run: |
           curl -sSL https://install.python-poetry.org | python3 -
 
-      - name: Cache Poetry virtual environment
+      - name: Configure Poetry
+        run: |
+          poetry config virtualenvs.in-project true
+
+      - name: Cache Poetry Dependencies
         uses: actions/cache@v2
         with:
-          path: ~/.cache/pypoetry/virtualenvs
+          path: .venv
           key: ${{ runner.os }}-poetry-${{ hashFiles('**/pyproject.toml') }}
           restore-keys: |
             ${{ runner.os }}-poetry-
@@ -39,3 +43,7 @@ jobs:
       - name: Run Pre-Commit Hooks
         run: |
           poetry run pre-commit run --all-files
+
+      - name: Run Tests
+        run: |
+          poetry run pytest tests/
