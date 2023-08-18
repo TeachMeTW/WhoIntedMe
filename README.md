@@ -33,7 +33,11 @@ This is WhoIntedMe, a fullstack application designed to help League of Legends p
 ![SQLite](https://img.shields.io/badge/-SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)
 
 
+# To run docker
 
+`docker build -t whointedme .`
+
+`docker run -p 8000:8000 whointedme`
 
 ## API Reference
 
