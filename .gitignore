@@ -163,3 +163,5 @@ __pycache__/
 backend/__pycache__/
 back/__pycache__
 *.pyc
+
+.pytest_cache/
