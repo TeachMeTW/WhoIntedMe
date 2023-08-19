@@ -162,6 +162,8 @@ cython_debug/
 __pycache__/
 backend/__pycache__/
 back/__pycache__
+frontend/__pycache__/
+front/__pycache__/
 *.pyc
 
 .pytest_cache/
