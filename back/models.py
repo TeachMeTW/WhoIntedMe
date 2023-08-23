@@ -15,8 +15,35 @@ class User(db.Model, UserMixin):
 
 class Match(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    # A placeholder, you can replace this with actual fields.
-    match_data = db.Column(db.Text)
-    # Placeholder for analysis data.
-    analysis = db.Column(db.Text)
-    user_id = db.Column(db.Integer, db.ForeignKey("user.id"), nullable=False)
+    gameCreation = db.Column(db.Integer)
+    gameDuration = db.Column(db.Integer)
+    gameMode = db.Column(db.String(50))
+    players = db.relationship("PlayerMatchStats", backref="match", lazy=True)
+
+
+class PlayerMatchStats(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    match_id = db.Column(db.Integer, db.ForeignKey("match.id"), nullable=False)
+    summonerName = db.Column(db.String(255))
+    win = db.Column(db.Boolean)
+    teamId = db.Column(db.Integer)
+    teamPosition = db.Column(db.String(50))
+    role = db.Column(db.String(50))
+    kills = db.Column(db.Integer)
+    deaths = db.Column(db.Integer)
+    assists = db.Column(db.Integer)
+    goldEarned = db.Column(db.Integer)
+    totalDamageDealt = db.Column(db.Integer)
+    totalDamageTaken = db.Column(db.Integer)
+    visionScore = db.Column(db.Integer)
+    wardsPlaced = db.Column(db.Integer)
+    wardsKilled = db.Column(db.Integer)
+    totalMinionsKilled = db.Column(db.Integer)
+    turretKills = db.Column(db.Integer)
+    totalTimeSpentDead = db.Column(db.Integer)
+    puuid = db.Column(db.String(255))
+    champLevel = db.Column(db.Integer)
+    championName = db.Column(db.String(100))
+    lane = db.Column(db.String(50))
+    totalHealsOnTeammate = db.Column(db.Integer, nullable=True)
+    baitPings = db.Column(db.Integer)
