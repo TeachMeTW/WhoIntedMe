@@ -42,9 +42,8 @@ def match_data(match):
     if response.status_code != 200:
         raise Exception("API request failed")
 
-    data = response.json()  # <-- This was missing!
-
-    expected_keys = ["gameId", "participants"]
+    data = response.json()
+    expected_keys = ["metadata", "info"]
     for key in expected_keys:
         if key not in data:
             raise KeyError(f"Expected key {key} not found in API response")

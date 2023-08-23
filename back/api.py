@@ -200,7 +200,6 @@ def get_match_history(user_id):
     for match_data in all_matches:
 
         match = Match.query.filter_by(id=match_data["gameId"]).first()
-        print(match)
         if not match:
             new_match = Match(
                 id=match_data["gameId"],
@@ -210,7 +209,6 @@ def get_match_history(user_id):
             )
 
             for player_data in match_data.get("participants", []):
-                print(player_data)
                 player_stats = PlayerMatchStats(
                     summonerName=player_data.get("summonerName"),
                     win=player_data.get("win"),

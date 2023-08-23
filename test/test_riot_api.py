@@ -68,8 +68,14 @@ def test_recent_match_ids(mock_get, mock_return_value, expected_length, exceptio
     "mock_return_value, expected_result, exception",
     [
         (
-            {"gameId": "123456", "participants": ["player1", "player2"]},
-            {"gameId": "123456", "participants": ["player1", "player2"]},
+            {
+                "metadata": {"data_key1": "data_value1"},
+                "info": {"info_key1": "info_value1"},
+            },
+            {
+                "metadata": {"data_key1": "data_value1"},
+                "info": {"info_key1": "info_value1"},
+            },
             None,
         ),
         ({"unexpected_key": "unexpected_value"}, None, KeyError),
