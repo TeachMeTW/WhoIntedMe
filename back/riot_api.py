@@ -43,8 +43,6 @@ def match_data(match):
         raise Exception("API request failed")
 
     data = response.json()
-    if not all(key in data for key in ["gameId", "participants"]):
-        raise KeyError("Expected keys not found in API response")
 
     return data
 
@@ -67,11 +65,11 @@ def get_all_matches(username):
         match_details = match_data(match_id)
 
         participants_data = match_details.get("metadata", {}).get("participants", [])
+
         info_data = match_details.get("info", {})
 
         # Combine 'participants' with 'info'
         combined_data = {"participants": participants_data, **info_data}
-
         all_matches.append(combined_data)
 
     return all_matches
