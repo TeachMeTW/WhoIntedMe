@@ -1,8 +1,7 @@
 # WhoIntedMe
 
-
-
 This is WhoIntedMe, a fullstack application designed to help League of Legends players determine who inted their game! With WhoIntedMe, we utilize statistical machine learning and data analysis to accurately identify who inted your ranked games. Now you can hold your teammates accountable with FACTS and LOGIC.
+![Project Banner](Logo.png)
 
 ## 🚀 Soon to be features
 
@@ -64,4 +63,3 @@ CD into app, and run the following commands in the terminal
 
 Once node_modules folder has been created you can run "poetry run npm start" anytime to launch the app
 
-![Project Banner](Logo.png)
