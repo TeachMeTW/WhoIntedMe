@@ -45,7 +45,9 @@ This is WhoIntedMe, a fullstack application designed to help League of Legends p
 CD into app, and run the following commands in order
 
 `poetry shell`
+
 `poetry run npm install`
+
 `poetry run npm start`
 
 Once node_modules folder has been created you can run "poetry run npm start" anytime to launch the app
