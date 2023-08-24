@@ -12,4 +12,4 @@ Briefly describe the issue or reason for this report.
 
 ## Issue
 
-## Implementation/Suggestion 
+## Implementation/Suggestion

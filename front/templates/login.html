@@ -3,20 +3,20 @@ import React, { useState } from 'react';
 function LoginForm() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  
+
   const handleEmailChange = (event) => {
     setEmail(event.target.value);
   };
-  
+
   const handlePasswordChange = (event) => {
     setPassword(event.target.value);
   };
-  
+
   const handleSubmit = (event) => {
     event.preventDefault();
-    
+
     // Add your login logic here
-    
+
     // For demonstration purposes, let's just display a message
     const loginMessage = document.getElementById('login-message');
     loginMessage.innerText = 'Login successful!';
