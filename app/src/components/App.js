@@ -4,7 +4,7 @@ function App() {
   return (
     <div className="App">
         <p>
-         earn Reac 
+         Who Inted me 
         </p>      
     </div>
   );
