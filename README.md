@@ -55,11 +55,13 @@ CD into app, and run the following commands in the terminal
 
 `poetry run npm start`
 
-# To set
+Once node_modules folder has been created you can run "poetry run npm start" anytime to launch the app
+
+# To load docker
 
 `docker build -t whointedme .`
 
 `docker run -p 8000:8000 whointedme`
 
-Once node_modules folder has been created you can run "poetry run npm start" anytime to launch the app
+
 
