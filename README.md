@@ -12,9 +12,10 @@ This is WhoIntedMe, a fullstack application designed to help League of Legends p
 
 ## 🔗 Developers
 
-- 🧙‍♂️ Lead Developer: [@Robin Simpson](https://github.com/TeachMeTW)
-- 🧑‍💻 Backend Developer: [@Sebastian Sliva](https://github.com/Cybiii)
-- 👨‍💻 Frontend Developer: [@Jay Chong](https://github.com/Kizum1)
+- Lead Developer: [@Robin Simpson](https://github.com/TeachMeTW)
+- Backend Developer: [@Sebastian Sliva](https://github.com/Cybiii)
+- Frontend Developer: [@Jay Chong](https://github.com/Kizum1)
+- Frontend Developer: [@Khashayar Moradpour](https://github.com/khmorad)
 
 ## Tech Stack
 
@@ -39,11 +40,14 @@ This is WhoIntedMe, a fullstack application designed to help League of Legends p
 
 `docker run -p 8000:8000 whointedme`
 
-## API Reference
+# To launch app
 
-Access our API to retrieve League of Legends match data:
+CD into app, and run the following commands in order
 
-```http
-GET /api/riot
+`poetry shell`
+`poetry run npm install`
+`poetry run npm start`
 
-![Project Banner](Screenshot 2023-08-17 210425.png)
+Once node_modules folder has been created you can run "poetry run npm start" anytime to launch the app
+
+![Project Banner](Logo.png)
