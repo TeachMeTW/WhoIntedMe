@@ -4,7 +4,7 @@ function App() {
   return (
     <div className="App">
         <p>
-         Who Inted me 
+          Who actually inted me? 
         </p>      
     </div>
   );
