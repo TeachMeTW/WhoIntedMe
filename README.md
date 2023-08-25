@@ -1,8 +1,7 @@
 # WhoIntedMe
 
-
-
 This is WhoIntedMe, a fullstack application designed to help League of Legends players determine who inted their game! With WhoIntedMe, we utilize statistical machine learning and data analysis to accurately identify who inted your ranked games. Now you can hold your teammates accountable with FACTS and LOGIC.
+![Project Banner](Logo.png)
 
 ## 🚀 Soon to be features
 
@@ -12,9 +11,10 @@ This is WhoIntedMe, a fullstack application designed to help League of Legends p
 
 ## 🔗 Developers
 
-- 🧙‍♂️ Lead Developer: [@Robin Simpson](https://github.com/TeachMeTW)
-- 🧑‍💻 Backend Developer: [@Sebastian Sliva](https://github.com/Cybiii)
-- 👨‍💻 Frontend Developer: [@Jay Chong](https://github.com/Kizum1)
+- Lead Developer: [@Robin Simpson](https://github.com/TeachMeTW)
+- Backend Developer: [@Sebastian Sliva](https://github.com/Cybiii)
+- Frontend Developer: [@Jay Chong](https://github.com/Kizum1)
+- Frontend Developer: [@Khashayar Moradpour](https://github.com/khmorad)
 
 ## Tech Stack
 
@@ -32,18 +32,32 @@ This is WhoIntedMe, a fullstack application designed to help League of Legends p
 ## Database:
 ![SQLite](https://img.shields.io/badge/-SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)
 
+# How to setup
 
-# To run docker
+CD into WhoIntedMe, and run the following commands in the terminal.
+
+`poetry shell`
+
+`poetry install`
+
+`poetry run pre-commit install`
+
+To run the backend, run `poetry run flask run`
+
+# To launch app
+
+CD into app, and run the following commands in the terminal
+
+`poetry shell`
+
+`poetry run npm install`
+
+`poetry run npm start`
+
+Once node_modules folder has been created you can run "poetry run npm start" anytime to launch the app
+
+# To load docker
 
 `docker build -t whointedme .`
 
 `docker run -p 8000:8000 whointedme`
-
-## API Reference
-
-Access our API to retrieve League of Legends match data:
-
-```http
-GET /api/riot
-
-![Project Banner](Screenshot 2023-08-17 210425.png)
