@@ -19,6 +19,9 @@ flask-restful = "^0.3.10"
 tailwind = "^3.1.5b0"
 pre-commit = "^3.3.3"
 click = "^8.1.7"
+python-decouple = "^3.8"
+python-dotenv = "^1.0.0"
+flask-migrate = "^4.0.4"
 
 
 [tool.poetry.group.dev.dependencies]
