@@ -7,9 +7,7 @@ export default function LandingPage() {
   return (
     <div>
     <NavBar/>
-    <SearchBar/>
-      Who actually inted me?
-      
+    <SearchBar/>      
     </div>
   )
 }
