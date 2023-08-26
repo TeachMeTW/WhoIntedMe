@@ -164,6 +164,8 @@ backend/__pycache__/
 back/__pycache__
 frontend/__pycache__/
 front/__pycache__/
+test/__pycache__/
+migrations/__pycache__/
 *.pyc
 
 .pytest_cache/
