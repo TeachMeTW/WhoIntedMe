@@ -1,11 +1,12 @@
 import './App.css';
+import Profile from './ProfileCards';
+
 
 function App() {
   return (
     <div className="App">
-        <p>
-          Who actually inted me?
-        </p>
+      <p> Test Message</p>
+      <Profile />
     </div>
   );
 }
