@@ -20,11 +20,16 @@
     color: white;
     text-decoration: none;
     margin-right: 20px;
+    transition: 0.1s ease-in-out
   }
+ .tabs a:hover {
+  text-decoration: none; /* Remove default underline on hover */
+  border-bottom: 3px solid #3e7dd6; /* Add a thicker blue underline on hover */
+}
   .login-btn{
     border: none;
     outline: none;
-    padding: 3px 5px 3px 5px;
+    padding: 5px 8px 5px 8px;
     background-color: #3e7dd6;
     border-radius: 5px;
     transition: 0.2s ease-in-out;
@@ -34,4 +39,9 @@
     background-color: rgb(21, 67, 219);
   }
   
+  .welcome-msg {
+    text-decoration: underline; /* Add underline to the text */
+    padding-bottom: 2px; /* Adjust padding to ensure proper spacing */
+    margin-left: 10px; /* Adjust margin for spacing */
+  }
   

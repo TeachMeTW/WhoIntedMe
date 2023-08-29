@@ -27,16 +27,16 @@
     background-color: #ffffff;
     border: none;
     outline: none;
-    
     border: none;
     border-radius: 0 50px 50px 0;
-    padding: 10.6px 12px;
+    padding: 10.3px 13px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color .4s ease, padding .4s ease; /* Add padding to the transition */
   }
   
   .search-button:hover {
     background-color: #3568b8;
+    padding: 10.3px 18px; /* Adjusted padding */
     color: white;
   }
   
